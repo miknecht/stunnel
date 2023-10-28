@@ -14,6 +14,7 @@ RUN apt-get update -y && \
 #RUN apt-get -y install net-tools
 
 RUN mkdir -p /etc/stunnel
+RUN mkdir -p /etc/cert
 #VOLUME ["/etc/stunnel"]
 
 ENV BUCKET_NAME=bucket-stunnel-cloud-run-demo-403212
