@@ -1,7 +1,7 @@
 FROM ubuntu:focal
 
-
 ENV GCSFUSE_VERSION=1.2.0
+ENV MOUNT_POINT=/etc/cert
 
 RUN apt-get update -y && \
     apt-get install -y gnupg lsb-release curl && \
@@ -10,17 +10,11 @@ RUN apt-get update -y && \
     apt-get clean && \
     dpkg -i "gcsfuse_${GCSFUSE_VERSION}_amd64.deb"  
 
-
 RUN mkdir -p /etc/stunnel
 RUN mkdir -p /etc/cert
 
-
-ENV BUCKET_NAME=bucket-stunnel-cloud-run-demo-403212
-ENV MOUNT_POINT=/etc/stunnel
-
-ADD stunnel.conf /etc/stunnel/stunnel.conf
+#ADD stunnel.conf /etc/stunnel/stunnel.conf
 ADD stunnel.sh /stunnel.sh
-
 
 RUN set -x && chmod +x /stunnel.sh 
 
