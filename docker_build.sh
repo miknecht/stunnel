@@ -1,1 +1,1 @@
-docker build -t miknecht/stunnel .
+docker build -t miknecht/stunnel -f Dockerfile2 .

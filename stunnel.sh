@@ -1,5 +1,10 @@
 #!/bin/bash
-/usr/bin/gcsfuse -o ro $BUCKET_NAME $MOUNT_POINT
+if [[ -z $KEY_FILE ]]; then
+  /usr/bin/gcsfuse -o ro $BUCKET_NAME $MOUNT_POINT
+else
+  /usr/bin/gcsfuse -o ro --key-file $KEY_FILE $BUCKET_NAME $MOUNT_POINT
+fi
+
 
 cat << EOF > /etc/stunnel/stunnel.conf
 ; Some performance tunings
