@@ -14,12 +14,6 @@ ciphers = ALL
 debug = 7
 ;output = /var/log/stunnel.log
 
-[client]
-accept=0.0.0.0:8080
-client=yes
-cert = ${MOUNT_POINT}/stunnel.pem
-connect = localhost:8090
-
 [server]
 client = no
 accept = ${ACCEPT}

@@ -7,3 +7,5 @@ docker run -itd -P \
  -e ACCEPT='0.0.0.0:8090' \
 --net=host --privileged miknecht/stunnel
 
+# connect = coolmajesticrelaxedday.neverssl.com:80
+

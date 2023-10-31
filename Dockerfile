@@ -13,7 +13,6 @@ RUN apt-get update -y && \
 RUN mkdir -p /etc/stunnel
 RUN mkdir -p /etc/cert
 
-#ADD stunnel.conf /etc/stunnel/stunnel.conf
 ADD stunnel.sh /stunnel.sh
 
 RUN set -x && chmod +x /stunnel.sh 
