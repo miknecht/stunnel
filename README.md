@@ -5,7 +5,7 @@
 - Go to Artifact Registry
 - Click on Repositories on the left
 - Click on Create Repository
-- Name: cloud-monkey-artifact-registry
+- Name: stunnel-registry
 - Format: Docker
 - Mode: Standard
 - Location type: Region
@@ -21,14 +21,12 @@
     - Firewall Source filters: 0.0.0.0/0
     - Protocols and ports: tcp:8090
 
-
-# Create Service Account for Cloud Run Service
+# Create Service Account for Cunpute Engine
 - Go to IAM & Admin
 - Click on Service Accounts
 - Click on Create Service Account
     - Service Account Name: sa-stunnel-svc
     - Service Account Id: sa-stunnel-svc
-
 
 # Create Service Account for Cloud Build
 - Go to IAM & Admin
@@ -36,7 +34,6 @@
 - Click on Create Service Account
     - Service Account Name: sa-cloud-build
     - Service Account Id: sa-cloud-build
-
 
 # Assign Permissions to Service Account
 - Go to IAM & Admin
@@ -56,7 +53,7 @@
 - Click on IAM
 - Click on Grant Access
 - Add principals
-    - New Principal: sa-stunnel-build
+    - New Principal: sa-stunnel-svc
 - Roles:
     - Logs Writer
     - Object Viewer
