@@ -17,7 +17,7 @@ ciphers = ALL
 
 ; Some debugging stuff useful for troubleshooting
 debug = 7
-;output = /var/log/stunnel.log
+output = /var/log/stunnel.log
 
 [server]
 client = no
