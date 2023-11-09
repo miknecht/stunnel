@@ -1,7 +1,7 @@
 
 # stunnel
 
-# Create Create Artifact Registry 
+# Create Artifact Registry 
 - Go to Artifact Registry
 - Click on Repositories on the left
 - Click on Create Repository
