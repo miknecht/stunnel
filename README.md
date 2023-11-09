@@ -68,11 +68,11 @@
 
 
 # Create Cunpute Engine
-- Go to Cunpute Engine
+- Go to Compute Engine
 - Click on VM Instance
 - Click on CREATE INSTANCE
 - Add 
     - Name: stunnel
-    - Configure conatiner
+    - Configure container
 
 
