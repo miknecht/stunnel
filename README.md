@@ -13,7 +13,7 @@
 - Click Create
 
 # Create VPC fire rule
-- Go to VPC Networds
+- Go to VPC Network
 - Click on Firewall
 - Click on Create firewal rule
 - Add firewal rule
