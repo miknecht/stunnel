@@ -21,7 +21,7 @@
     - Firewall Source filters: 0.0.0.0/0
     - Protocols and ports: tcp:8090
 
-# Create Service Account for Cunpute Engine
+# Create Service Account for Compute Engine
 - Go to IAM & Admin
 - Click on Service Accounts
 - Click on Create Service Account
