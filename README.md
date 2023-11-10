@@ -67,7 +67,7 @@
     - New Principal: bucket-stunnel-<prohect_id>
 
 
-# Create Cunpute Engine
+# Create Compute Engine
 - Go to Compute Engine
 - Click on VM Instance
 - Click on CREATE INSTANCE
